@@ -3,313 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquestry</title>
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/155507142?v=4" type="image/jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
+    <title>Anton K. (Aquestry) - Developer & Student</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        img[src="https://avatars.githubusercontent.com/u/155507142?v=4"] {
-            border-radius: 50%;
-        }
         body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #011627;
+            color: #d6deeb;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #000000;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
-
         .container {
-            display: flex;
-            flex-direction: row;
-            width: 90%;
-            max-width: 1200px;
-            height: 85vh;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
         }
-
-        /* Sidebar */
-        .sidebar {
-            width: 20%;
-            background-color: #150050;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-            font-family: 'Fira Code', monospace;
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
         }
-
-        .sidebar img {
-            width: 80px;
+        h1 {
+            color: #82aaff;
+        }
+        .profile-image {
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
-            margin-bottom: 20px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #82aaff;
         }
-
-        .sidebar a {
-            color: #61dafb;
-            text-decoration: none;
-            margin: 10px 0;
-            font-size: 1.2em;
-            text-align: center;
-            display: block;
+        .section {
+            background-color: #0e293f;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        .sidebar a:hover {
-            color: #fff;
+        h2 {
+            color: #c792ea;
+            margin-top: 0;
         }
-
-        /* Main Content */
-        .content {
-            width: 80%;
-            padding: 20px;
+        .social-links {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background-color: #3F0071;
-            border-radius: 15px;
-            margin-left: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-        }
-
-        .profile-card {
-            background-color: #610094;
-            padding: 20px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-        }
-
-        .profile-card img {
-            width: 120px;
-            border-radius: 15px;
-        }
-
-        .profile-card .info {
-            margin-left: 20px;
-        }
-
-        .profile-card h2 {
-            font-family: 'Fira Code', monospace;
-            font-size: 2em;
-            margin: 0;
-        }
-
-        .profile-card p {
-            font-family: 'Fira Code', monospace;
-            font-size: 1.1em;
-            margin: 10px 0;
-        }
-
-        .profile-card .links {
-            margin-top: 15px;
-        }
-
-        .profile-card .links a {
-            color: #61dafb;
-            text-decoration: none;
-            font-size: 1em;
-            margin-right: 15px;
-        }
-
-        .profile-card .links a:hover {
-            color: white;
-        }
-
-        /* About Me */
-        .info-inbox {
-            margin-top: 20px;
-            background-color: #610094; /* Same background color as skills */
-            padding: 20px;
-            border-radius: 15px;
-        }
-
-        .info-inbox h2 {
-            font-size: 1.8em;
-            font-family: 'Fira Code', monospace;
-        }
-
-        .info-inbox p {
-            font-size: 1.2em;
-            font-family: 'Fira Code', monospace;
-        }
-
-        .technologies {
-            margin-top: 20px;
-            background-color: #610094;
-            padding: 20px;
-            border-radius: 15px;
-        }
-
-        .technologies h2 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            font-family: 'Fira Code', monospace;
-        }
-
-        .technologies .tech-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
             justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
         }
-
-        .technologies .tech-item {
+        .social-links a {
+            color: #7fdbca;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .social-links a:hover {
+            color: #82aaff;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+        }
+        .tech-item {
             text-align: center;
-            width: 100px;
+            background-color: #1c3951;
+            padding: 1rem;
+            border-radius: 8px;
         }
-
-        .technologies .tech-item img {
-            width: 80px;
-            height: 80px;
-            object-fit: contain; /* Ensures the image fits and keeps its aspect ratio */
-            background-color: transparent;
+        .tech-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #ffeb95;
         }
-
         footer {
             text-align: center;
-            font-size: 0.9em;
-            margin-top: 20px;
-        }
-
-        /* Media Queries for Mobile Responsiveness */
-        @media (max-width: 768px) {
-            body {
-                flex-direction: column;
-                height: auto;
-            }
-
-            .container {
-                flex-direction: column;
-                height: auto;
-            }
-
-            .sidebar {
-                width: 100%;
-                margin-bottom: 20px;
-                border-radius: 0;
-            }
-
-            .content {
-                width: 100%;
-                margin-left: 0;
-                border-radius: 0;
-                height: auto;
-            }
-
-            .profile-card img {
-                width: 100px;
-            }
-
-            .profile-card h2 {
-                font-size: 1.5em;
-            }
-
-            .technologies h2 {
-                font-size: 1.5em;
-            }
-
-            .technologies .tech-item img {
-                width: 60px;
-                height: 60px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .profile-card h2 {
-                font-size: 1.2em;
-            }
-
-            .profile-card p {
-                font-size: 0.9em;
-            }
-
-            .profile-card img {
-                width: 80px;
-            }
-
-            .technologies .tech-item img {
-                width: 50px;
-                height: 50px;
-            }
-
-            .technologies h2 {
-                font-size: 1.2em;
-            }
+            margin-top: 2rem;
+            color: #7fdbca;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <img src="https://cdn.discordapp.com/avatars/704743506677334138/df966c9a661ead4a160b287cf001d7fd.webp?size=160" alt="Profile Picture">
-            <a href="https://github.com/aquestry/">GitHub</a>
-            <a href="https://voasis.de/">Voasis</a>
-            <a href="https://discord.gg/Ux8zRjhNyZ">Discord</a>
-        </div>
-
-        <!-- Main Content -->
-        <div class="content">
-            <div class="profile-card">
-                <img src="https://avatars.githubusercontent.com/u/155507142?v=4" alt="Profile Picture">
-                <div class="info">
-                    <h2>Anton K.(Aquestry)</h2>
-                    <p>Developer & Student</p>
+        <header>
+            <img src="https://cdn.discordapp.com/avatars/704743506677334138/df966c9a661ead4a160b287cf001d7fd.webp?size=160" alt="Profile Picture" class="profile-image">
+            <h1>&lt;Anton_K / Aquestry&gt;</h1>
+            <p>/* Developer & Student */</p>
+        </header>
+        
+        <section class="section">
+            <h2>/* About Me */</h2>
+            <p>I am a student in Germany and I have a hobby for Coding.</p>
+        </section>
+        
+        <section class="section">
+            <h2>/* Skills */</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fa-brands fa-java tech-icon"></i>
+                    <p>Java</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-gamepad tech-icon"></i>
+                    <p>Godot</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-code tech-icon"></i>
+                    <p>C#</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-unity tech-icon"></i>
+                    <p>Unity</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-microchip tech-icon"></i>
+                    <p>IntelliJ</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-html5 tech-icon"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-css3-alt tech-icon"></i>
+                    <p>CSS</p>
                 </div>
             </div>
-
-            <!-- About Me Section -->
-            <div class="info-inbox">
-                <h2>✨ About Me</h2>
-                <p>I am a student in Germany and I have a hobby for coding some things.</p>
-            </div>
-
-            <!-- Skills Section -->
-            <div class="technologies">
-                <h2>Skills</h2>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <img src="java.png" alt="Java logo" />
-                        <p>Java</p>
-                    </div>
-                    <div class="tech-item">
-                        <img src="godot.png" alt="Godot logo" />
-                        <p>Godot</p>
-                    </div>
-                    <div class="tech-item">
-                        <img src="csharp.png" alt="C# logo" />
-                        <p>C#</p>
-                    </div>
-                    <div class="tech-item">
-                        <img src="unity.png" alt="Unity logo" />
-                        <p>Unity</p>
-                    </div>
-                    <div class="tech-item">
-                        <img src="inteliji.png" alt="IntelliJ logo" />
-                        <p>IntelliJ</p>
-                    </div>
-                    <div class="tech-item">
-                        <img src="css.svg" alt="Html logo" />
-                        <p>Html</p>
-                    </div>
-                    <div class="tech-item">
-                        <img src="html.png" alt="Css logo" />
-                        <p>Css</p>
-                    </div>
-                </div>
-            </div>
-
-            <footer>
-                <p>&copy; aquestry.dev - 2024</p>
-            </footer>
+        </section>
+        
+        <div class="social-links">
+            <a href="https://github.com/aquestry/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://voasis.de/"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://discord.gg/Ux8zRjhNyZ"><i class="fa-brands fa-discord"></i></a>
         </div>
+        
+        <footer>
+            © aquestry.dev - 2024
+        </footer>
     </div>
-
 </body>
 </html>
