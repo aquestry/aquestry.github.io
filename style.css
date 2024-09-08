@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.technologies {
+    text-align: center;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tech-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100px;
+    text-align: center;
+}
+
+.tech-item img {
+    background-color: transparent; /* Ensure background is transparent */
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.tech-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Optional: Add hover effect */
+.tech-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .tech-item {
+        width: 80px;
+    }
+
+    .tech-item img {
+        width: 40px;
+    }
+
+    .tech-item p {
+        font-size: 12px;
+    }
+}
