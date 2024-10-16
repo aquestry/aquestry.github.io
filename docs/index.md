@@ -8,6 +8,6 @@ hero:
     - theme: brand
       text: Discord
       link: https://discord.gg/jC9azQtJmC
-    - theme: brand
+    - theme: alt
       text: GitHub
       link: https://github.com/aquestry/
