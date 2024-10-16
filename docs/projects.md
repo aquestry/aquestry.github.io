@@ -11,7 +11,4 @@ In addition, it also scales the default server dynamically, so many players are 
 - 🔧 **Seamless Integration**: Works smoothly with the Velocity Minecraft Proxy.
 - 👍 **Simple Permissions**: For now you only have to set the admin UUIDs in the config.
 
-For more information, check out the official repository and the Nebula website!
-[Website](https://voasis.de/)
-
-[Github](https://github.com/aquestry/Nebula)
+For more information, check out the official [repository](https://github.com/aquestry/Nebula) and the Nebula [website](https://voasis.de/)!
