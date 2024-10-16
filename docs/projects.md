@@ -9,7 +9,9 @@ In addition, it also scales the default server dynamically, so many players are 
 - ⚡ **Remote Server Management**: Control backend servers using SSH and Docker.
 - 📈 **Automatic Scaling**: Dynamically scale default servers to handle multiple players.
 - 🔧 **Seamless Integration**: Works smoothly with the Velocity Minecraft Proxy.
+- 👍 **Simple Permissions**: For now you only have to set the admin UUIDs in the config.
 
-For more information, check out the official repository and join our Discord community!
+For more information, check out the official repository and the Nebula website!
 [Website](https://voasis.de/)
+
 [Github](https://github.com/aquestry/Nebula)
