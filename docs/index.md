@@ -9,8 +9,8 @@ hero:
       text: Discord
       link: https://discord.gg/jC9azQtJmC
     - theme: alt
+      text: GitHub
+      link: https://github.com/aquestry  
+    - theme: alt
       text: Nebula
       link: https://voasis.de
-    - theme: alt
-      text: GitHub
-      link: https://github.com/aquestry
