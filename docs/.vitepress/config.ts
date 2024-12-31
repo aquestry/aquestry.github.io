@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: 'Aquestry',
-  head: [['link', { rel: 'icon', href: 'http://188.34.205.94/logo.svg' }]],
+  head: [['link', { rel: 'icon', href: 'favicon.ico' }]],
   themeConfig: {
     nav: [{ text: 'Projects', link: '/projects' }],
     footer: {
@@ -12,7 +12,7 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    logo: 'http://188.34.205.94/logo.svg',
+    logo: 'favicon.ico',
     cleanUrls: true
   },
 });
