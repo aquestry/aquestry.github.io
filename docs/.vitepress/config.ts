@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: 'Aquestry',
-  head: [['link', { rel: 'icon', href: 'favicon.ico' }]],
   themeConfig: {
     nav: [{ text: 'Projects', link: '/projects' }],
     footer: {
