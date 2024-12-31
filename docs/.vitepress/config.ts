@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: 'Aquestry',
-  head: [['link', { rel: 'icon', href: 'https://ams02pap001files.storage.live.com/y4mxLCM3AXgk7BZhDltzQEmeyQskUAQlu2U69Aw_Rr6ftmg4HApkxh_iX0HBeIPnB0kfJna50vBGuYVlIlgstYgcPvlrZtsF1QnHswOoWWyMwRcIH62cjrlAvIQ65MJ238mUCGe0dXWoyPtuL8cDD5QrvFHpTudX2K4fInpNSoF7VIb_czj69gR8y5ENRc_l11DUOcVBXMZFkl-_STavbMANpnWpmNfcg0t6Rc6eUErL8g' }]],
+  head: [['link', { rel: 'icon', href: 'http://188.34.205.94/logo.svg' }]],
   themeConfig: {
     nav: [{ text: 'Projects', link: '/projects' }],
     footer: {
@@ -12,7 +12,7 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    logo: 'https://ams02pap001files.storage.live.com/y4mxLCM3AXgk7BZhDltzQEmeyQskUAQlu2U69Aw_Rr6ftmg4HApkxh_iX0HBeIPnB0kfJna50vBGuYVlIlgstYgcPvlrZtsF1QnHswOoWWyMwRcIH62cjrlAvIQ65MJ238mUCGe0dXWoyPtuL8cDD5QrvFHpTudX2K4fInpNSoF7VIb_czj69gR8y5ENRc_l11DUOcVBXMZFkl-_STavbMANpnWpmNfcg0t6Rc6eUErL8g',
+    logo: 'http://188.34.205.94/logo.svg',
     cleanUrls: true
   },
 });
