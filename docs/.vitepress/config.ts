@@ -6,7 +6,7 @@ export default defineConfig({
     nav: [{ text: 'Projects', link: '/projects' }],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024 Anton K.'
+      copyright: 'Copyright © ' + new Date().getFullYear() + ' Anton K.'
     },
     search: {
       provider: 'local'
