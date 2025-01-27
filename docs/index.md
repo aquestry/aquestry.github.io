@@ -3,7 +3,7 @@ layout: home
 hero:
   name: Aquestry
   text: Student & Developer
-  tagline: Student in germany with a hobby for coding.
+  tagline: Student in germany with a hobby for coding stuff.
   actions:
     - theme: brand
       text: Discord
