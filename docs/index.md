@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: "Aquestry"
+  name: Aquestry
   text: Student & Developer
   tagline: Student in germany with a hobby for coding.
   actions:
@@ -10,7 +10,4 @@ hero:
       link: https://discord.gg/jC9azQtJmC
     - theme: alt
       text: GitHub
-      link: https://github.com/aquestry  
-    - theme: alt
-      text: Nebula
-      link: https://voasis.de
+      link: https://github.com/aquestry
