@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: 'Aquestry',
+  cleanUrls: true,
   themeConfig: {
     nav: [{ text: 'Projects', link: '/projects' }],
     footer: {
@@ -11,7 +12,6 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    logo: 'favicon.ico',
-    cleanUrls: true
+    logo: 'favicon.ico'
   },
 });
