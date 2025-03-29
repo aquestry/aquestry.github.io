@@ -5,7 +5,14 @@
     font-weight: 800;
 }
 
-.VPContent .VPFooter {
-    border-top: none !important;
-    box-shadow: none !important;
+.VPHomeHero .image {
+    filter: drop-shadow(0 0 25px #ff6ec4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VPHomeHero .image img {
+    width: 256px;
+    height: 256px;
 }
