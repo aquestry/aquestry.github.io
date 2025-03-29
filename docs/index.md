@@ -4,6 +4,9 @@ hero:
   name: Aquestry
   text: Student & Developer
   tagline: Student in germany with a hobby for coding stuff.
+image:
+  src: /favicon.ico
+  alt: Logo
   actions:
     - theme: brand
       text: Discord
@@ -11,3 +14,4 @@ hero:
     - theme: alt
       text: GitHub
       link: https://github.com/aquestry
+---

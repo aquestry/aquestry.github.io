@@ -13,6 +13,16 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    logo: 'favicon.ico'
+    logo: 'favicon.ico',
+    socialLinks: [
+      {
+        icon: "github",
+        link: "https://github.com/aquestry",
+      },
+      {
+        icon: "discord",
+        link: "https://discord.gg/jC9azQtJmC",
+      },
+    ],
   },
 });
