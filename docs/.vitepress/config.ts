@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: 'Aquestry',
+  description: "Developer from Germany.",
   cleanUrls: true,
   themeConfig: {
     nav: [{ text: 'Projects', link: '/projects' }],
